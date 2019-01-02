@@ -1,0 +1,12 @@
+<table class="table table-striped">
+    <?php foreach ($users as $user):?>
+    <?php extract($user->toArray());?>
+    <tr>
+        <td><?=$id?></td>
+        <td><?=$nome?></td>
+        <td><?=$email?></td>
+        <td><?=$created?></td>
+    </tr>
+    <?php endforeach;?>
+</table>
+
