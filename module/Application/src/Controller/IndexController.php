@@ -14,6 +14,10 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
+        if(!$this->identity())
+        {
+            return $this->redirect()->toRoute('login');
+        }
         return new ViewModel();
     }
 }

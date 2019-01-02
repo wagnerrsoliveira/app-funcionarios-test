@@ -1,15 +1,24 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: Pcp
+ * Date: 02/01/2019
+ * Time: 12:35
+ */
 
-namespace Auth\Controller;
+namespace Funcionario\Controller;
 
-use Auth\Model\UsersRepository;
+
+
 use Interop\Container\ContainerInterface;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 
-class AuthController extends AbstractActionController
+class FuncionarioController extends AbstractActionController
 {
+
     private $containerInterface;
+
 
     public function __construct(ContainerInterface $containerInterface)
     {
@@ -22,7 +31,6 @@ class AuthController extends AbstractActionController
         {
             return $this->redirect()->toRoute('login');
         }
-        $users = $this->containerInterface->get(UsersRepository::class)->select();
-        return new ViewModel(['users'=>$users]);
+        return new ViewModel();
     }
 }

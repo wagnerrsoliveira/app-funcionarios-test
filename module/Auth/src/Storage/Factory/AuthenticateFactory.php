@@ -9,7 +9,7 @@ use Zend\Authentication\Adapter\DbTable\CredentialTreatmentAdapter as AuthAdapte
 use Zend\Authentication\AuthenticationService;
 use Zend\Db\Adapter\AdapterInterface;
 
-class AutheticateFactory
+class AuthenticateFactory
 {
     public function __invoke(ContainerInterface $container)
     {

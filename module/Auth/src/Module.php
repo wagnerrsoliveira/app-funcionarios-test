@@ -10,6 +10,8 @@ use Auth\Model\Factory\UsersFactory;
 use Auth\Model\Factory\UsersRepositoryFactory;
 use Auth\Model\Users;
 use Auth\Model\UsersRepository;
+use Auth\Storage\Authenticate;
+use Auth\Storage\Factory\AuthenticateFactory;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Zend\ModuleManager\Feature\ServiceProviderInterface;
 
@@ -29,6 +31,7 @@ class Module implements ConfigProviderInterface, ServiceProviderInterface
                 LoginFilter::class=>LoginFilterFactory::class,
                 Users::class=>UsersFactory::class,
                 UsersRepository::class=>UsersRepositoryFactory::class,
+                Authenticate::class=>AuthenticateFactory::class
             ]
         ];
     }

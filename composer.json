@@ -21,12 +21,14 @@
         "zendframework/zend-mvc-i18n": "^1.0",
         "zendframework/zend-mvc-plugins": "^1.0.1",
         "zendframework/zend-session": "^2.7.1",
-        "zendframework/zend-authentication": "^2.6"
+        "zendframework/zend-authentication": "^2.6",
+        "zendframework/zend-mvc-plugin-identity": "^1.1"
     },
     "autoload": {
         "psr-4": {
             "Application\\": "module/Application/src/",
-            "Auth\\": "module/Auth/src/"
+            "Auth\\": "module/Auth/src/",
+            "Funcionario\\": "module/Funcionario/src/"
         }
     },
     "autoload-dev": {

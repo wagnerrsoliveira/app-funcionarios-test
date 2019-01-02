@@ -4,6 +4,7 @@ namespace Auth;
 
 use Auth\Controller\Factory\AuthControllerFactory;
 use Auth\Controller\Factory\LoginControllerFactory;
+use Zend\Authentication\AuthenticationService;
 use Zend\Router\Http\Segment;
 
 return [
@@ -35,6 +36,11 @@ return [
         'factories' => [
             Controller\AuthController::class => AuthControllerFactory::class,
             Controller\LoginController::class => LoginControllerFactory::class,
+        ],
+    ],
+    'service_manager' => [
+        'invokables' => [
+            'my_auth_service' => AuthenticationService::class,
         ],
     ],
     'view_manager' => [

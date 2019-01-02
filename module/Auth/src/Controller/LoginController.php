@@ -3,6 +3,7 @@
 namespace Auth\Controller;
 
 use Auth\Form\LoginForm;
+use Auth\Storage\Authenticate;
 use Interop\Container\ContainerInterface;
 use Auth\Storage\Result;
 use Zend\Mvc\Controller\AbstractActionController;
@@ -56,7 +57,9 @@ class LoginController extends AbstractActionController
                     // $request['redirect']="/admin";
                     return $this->redirect()->toRoute('home');
                 }
+                return $this->redirect()->toRoute('login');
             }
+            return $this->redirect()->toRoute('home');
         }
         return new ViewModel(compact('form'));
     }
