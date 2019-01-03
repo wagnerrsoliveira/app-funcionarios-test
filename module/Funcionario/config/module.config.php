@@ -11,7 +11,11 @@ return [
             'funcionario' => [
                 'type'    => Segment::class,
                 'options' => [
-                    'route'    => '/funcionario[/:action]',
+                    'route'    => '/funcionario[/:action[/:id]]',
+                    'constraints' => [
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                        'id' => '[0-9]+',
+                    ],
                     'defaults' => [
                         'controller' => Controller\FuncionarioController::class,
                         'action'     => 'index',

@@ -15,7 +15,7 @@ class AuthenticateFactory
     {
         $dbAdapter =$container->get(AdapterInterface::class);
         $dbTableAuthAdapter = new AuthAdapter($dbAdapter,
-            'tbl_users',
+            'users',
             'email',
             'password',
             "MD5('123456') AND level = 1");

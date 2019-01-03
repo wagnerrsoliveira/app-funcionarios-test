@@ -1,0 +1,154 @@
+<?php
+function format($mask,$string)
+{
+    return  vsprintf($mask, str_split($string));
+}
+
+echo count($funcionarios);
+?>
+
+<h2><span class="glyphicon glyphicon-user"></span> Detalhes do Funcionário</h2>
+
+<?php foreach ($funcionarios as $funcionario):?>
+
+    <hr>
+    <h3>Dados Pessoas</h3>
+    <div class="row">
+        <div class="form-group col-md-4">
+            <span ><strong>Nome: </strong><span class="text-secondary"> <?=$funcionario->getNome()?></span></span>
+        </div>
+        <div class="form-group col-md-4">
+            <span ><strong>RG: </strong><span class="text-secondary"> <?=format("%s%s.%s%s%s.%s%s%s-%s",$funcionario->getRg())?></span></span>
+        </div>
+        <div class="form-group col-md-4">
+            <span ><strong>CPF: </strong><span class="text-secondary"> <?=format("%s%s%s.%s%s%s.%s%s%s-%s%s",$funcionario->getCpf())?></span></span>
+        </div>
+        <div class="form-group col-md-4">
+            <span ><strong>Data Nascimento: </strong><span class="text-secondary"> <?=date_format(date_create($funcionario->getDataNascimento()), 'd/m/Y')?></span></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <span ><strong>Estado Civil: </strong>
+                <span class="text-secondary">
+                    <?php
+                    switch ($funcionario->getEstadoCivil()){
+                        case "S":
+                            echo 'Solteiro(a)';
+                            break;
+                        case "C":
+                            echo 'Casado(a)';
+                            break;
+                        case "D":
+                            echo 'Divorciado(a)';
+                            break;
+                        case "D":
+                            echo 'Viúvo(a)';
+                            break;
+                    }
+                    ?>
+                </span>
+            </span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <span ><strong>Sexo: </strong>
+                <span class="text-secondary">
+                    <?php switch ($funcionario->getSexo()){
+                            case "M":
+                                echo 'Masculino';
+                                break;
+                            case "F":
+                                echo 'Feminino';
+                                break;
+                        } ?>
+                </span>
+            </span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <span ><strong>E-mail: </strong><span class="text-secondary"> <?=$funcionario->getEmail()?></span></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <span ><strong>Telefone Fixo: </strong><span class="text-secondary"> <?=format("(%s%s%s) %s%s%s%s-%s%s%s%s",$funcionario->getTelefoneFixo())?></span></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <span ><strong>Telefone Movel: </strong><span class="text-secondary"> <?=format("(%s%s%s) %s%s%s%s%s-%s%s%s%s",$funcionario->getTelefoneMovel())?></span></span>
+        </div>
+    </div>
+    <hr>
+    <h3>Endereço</h3>
+    <div class="row">
+        <div class="form-group col-md-4">
+            <span ><strong>CEP: </strong><span class="text-secondary"> <?=format("%s%s%s%s%s-%s%s%s",$funcionario->getCep())?></span></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <span ><strong>Logradouro: </strong><span class="text-secondary"> <?=$funcionario->getLogradouro()?></span></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <span ><strong>Número: </strong><span class="text-secondary"> <?=$funcionario->getNumero()?></span></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <span ><strong>Bairro: </strong><span class="text-secondary"> <?=$funcionario->getBairro()?></span></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <span ><strong>Complemento: </strong><span class="text-secondary"> <?=$funcionario->getComplemento()?></span></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <span ><strong>Cidade: </strong><span class="text-secondary"> <?=$funcionario->getCidade()?></span></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <span ><strong>Estado: </strong><span class="text-secondary"> <?=$funcionario->getEstado()?></span></span>
+        </div>
+
+    </div>
+    <hr>
+    <h3>Dados Contratuais</h3>
+    <div class="row">
+        <div class="form-group col-md-4">
+            <span ><strong>Departamento: </strong><span class="text-secondary">
+                      <?php foreach ($departamentos as $departamento){
+                          if($departamento->getId()==$funcionario->getIdDepartamento()){
+                              echo $departamento->getDescricao();
+                          }
+                      }
+                      ?>
+                </span>
+            </span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <span ><strong>Função: </strong><span class="text-secondary">
+                      <?php foreach ($funcoes as $funcao){
+                          if($funcao->getId()==$funcionario->getIdFuncao()){
+                              echo $funcao->getDescricao();
+                          }
+                      }
+                      ?>
+                </span>
+            </span>
+        </div>
+
+
+        <div class="form-group col-md-4">
+            <span ><strong>Salário: </strong><span class="text-secondary"> <?= 'R$' . number_format($funcionario->getSalario(), 2)?></span></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <span ><strong>Data Admissão: </strong><span class="text-secondary"> <?=date_format(date_create($funcionario->getDataAdmissao()), 'd/m/Y')?></span></span>
+        </div>
+
+        <div class="form-group col-md-4">
+            <span ><strong>Data Demissão: </strong><span class="text-secondary"> <?=$funcionario->getDataDemissao() == null ? "":date_format(date_create($funcionario->getDataDemissao()), 'd/m/Y')?></span></span>
+        </div>
+
+    </div>
+<?php endforeach;?>
+

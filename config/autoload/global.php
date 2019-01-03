@@ -12,9 +12,6 @@
  */
 
 return [
-   'module_layouts' =>[
-       'Auth' => 'layout/auth'
-   ],
     'db'=>[
         'driver' => 'Pdo_Mysql',
         'database' => 'test',

@@ -16,6 +16,6 @@ class UsersRepositoryFactory
     {
         $resultPrototype = new ResultSet();
         $resultPrototype->setArrayObjectPrototype($containerInterface->get(Users::class));
-        return new UsersRepository(new TableGateway('tbl_users',$containerInterface->get(AdapterInterface::class),null,$resultPrototype));
+        return new UsersRepository(new TableGateway('users',$containerInterface->get(AdapterInterface::class),null,$resultPrototype));
     }
 }
