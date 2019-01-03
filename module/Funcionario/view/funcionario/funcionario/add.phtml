@@ -2,12 +2,35 @@
 $title = 'Cadastro de Funcionário';
 $this->headTitle($title);
 ?>
-<h1><?= $this->escapeHtml($title) ?></h1>
+<h1><span class="glyphicon glyphicon-user"></span> <?= $this->escapeHtml($title) ?></h1>
 
 <?php
 // This provides a default CSS class and placeholder text for the title element:
 $nome = $form->get('nome');
+$rg = $form->get('rg');
+$cpf = $form->get('cpf');
+$dataNasc = $form->get('dataNasc');
+$estadoCivil = $form->get('estadoCivil');
+$sexo = $form->get('sexo');
 
+$email = $form->get('email');
+$telefoneFixo = $form->get('telefoneFixo');
+$telefoneMovel = $form->get('telefoneMovel');
+
+$cep = $form->get('cep');
+$logradouro = $form->get('logradouro');
+$numero = $form->get('numero');
+$bairro = $form->get('bairro');
+$complemento = $form->get('complemento');
+$cidade = $form->get('cidade');
+$estado = $form->get('estado');
+
+$salario = $form->get('salario');
+$funcao = $form->get('funcao');
+$departamento = $form->get('departamento');
+
+$dataAdmissao = $form->get('dataAdmissao');
+$dataDemissao = $form->get('dataDemissao');
 
 $submit = $form->get('submit');
 $submit->setAttribute('class', 'btn btn-primary');
@@ -17,155 +40,152 @@ $form->prepare();
 
 echo $this->form()->openTag($form);
 ?>
+<hr>
+<h3>Dados Pessoas</h3>
+<div class="row">
+    <div class="form-group col-md-6">
+        <?= $this->formLabel($nome) ?>
+        <?= $this->formElement($nome) ?>
+        <?= $this->formElementErrors()->render($nome, ['class' => 'text-danger']) ?>
+    </div>
+    <div class="form-group col-md-3">
+        <?= $this->formLabel($rg) ?>
+        <?= $this->formElement($rg) ?>
+        <?= $this->formElementErrors()->render($rg, ['class' => 'text-danger']) ?>
+    </div>
+    <div class="form-group col-md-3">
+        <?= $this->formLabel($cpf) ?>
+        <?= $this->formElement($cpf) ?>
+        <?= $this->formElementErrors()->render($cpf, ['class' => 'text-danger']) ?>
+    </div>
+    <div class="form-group col-md-4">
+        <?= $this->formLabel($dataNasc) ?>
+        <?= $this->formElement($dataNasc) ?>
+        <?= $this->formElementErrors()->render($dataNasc, ['class' => 'text-danger']) ?>
+    </div>
+    <div class="form-group col-md-4">
+        <?= $this->formLabel($estadoCivil) ?>
+        <?= $this->formElement($estadoCivil) ?>
+        <?= $this->formElementErrors()->render($estadoCivil, ['class' => 'text-danger']) ?>
+    </div>
+    <div class="form-group col-md-4">
+        <?= $this->formLabel($sexo) ?>
+        <div class="radio">
+            <?= $this->formElement($sexo) ?>
+         </div>
+        <?= $this->formElementErrors()->render($sexo, ['class' => 'text-danger']) ?>
+    </div>
 
-<div class="form-group">
-    <?= $this->formLabel($nome) ?>
-    <?= $this->formElement($nome) ?>
-    <?= $this->formElementErrors()->render($nome, ['class' => 'help-block']) ?>
+    <div class="form-group col-md-4">
+        <?= $this->formLabel($email) ?>
+        <?= $this->formElement($email) ?>
+        <?= $this->formElementErrors()->render($email, ['class' => 'text-danger']) ?>
+    </div>
+
+    <div class="form-group col-md-4">
+        <?= $this->formLabel($telefoneFixo) ?>
+        <?= $this->formElement($telefoneFixo) ?>
+        <?= $this->formElementErrors()->render($telefoneFixo, ['class' => 'text-danger']) ?>
+    </div>
+    <div class="form-group col-md-4">
+        <?= $this->formLabel($telefoneMovel) ?>
+        <?= $this->formElement($telefoneMovel) ?>
+        <?= $this->formElementErrors()->render($telefoneMovel, ['class' => 'text-danger']) ?>
+    </div>
 </div>
+<hr>
+<h3>Endereço</h3>
+<div class="row">
+    <div class="form-group col-md-2">
+        <?= $this->formLabel($cep) ?>
+        <?= $this->formElement($cep) ?>
+        <?= $this->formElementErrors()->render($cep, ['class' => 'text-danger']) ?>
+    </div>
 
+    <div class="form-group col-md-6">
+        <?= $this->formLabel($logradouro) ?>
+        <?= $this->formElement($logradouro) ?>
+        <?= $this->formElementErrors()->render($logradouro, ['class' => 'text-danger']) ?>
+    </div>
+
+    <div class="form-group col-md-1">
+        <?= $this->formLabel($numero) ?>
+        <?= $this->formElement($numero) ?>
+        <?= $this->formElementErrors()->render($numero, ['class' => 'text-danger']) ?>
+    </div>
+    <div class="form-group col-md-3">
+        <?= $this->formLabel($bairro) ?>
+        <?= $this->formElement($bairro) ?>
+        <?= $this->formElementErrors()->render($bairro, ['class' => 'text-danger']) ?>
+    </div>
+    <div class="form-group col-md-4">
+        <?= $this->formLabel($complemento) ?>
+        <?= $this->formElement($complemento) ?>
+        <?= $this->formElementErrors()->render($complemento, ['class' => 'text-danger']) ?>
+    </div>
+    <div class="form-group col-md-4">
+        <?= $this->formLabel($cidade) ?>
+        <?= $this->formElement($cidade) ?>
+        <?= $this->formElementErrors()->render($cidade, ['class' => 'text-danger']) ?>
+    </div>
+    <div class="form-group col-md-4">
+        <?= $this->formLabel($estado) ?>
+        <?= $this->formElement($estado) ?>
+        <?= $this->formElementErrors()->render($estado, ['class' => 'text-danger']) ?>
+    </div>
+</div>
+<hr>
+<h3>Dados Contratuais</h3>
+<div class="row">
+    <div class="form-group col-md-4">
+        <?= $this->formLabel($funcao) ?>
+        <?= $this->formElement($funcao) ?>
+        <?= $this->formElementErrors()->render($funcao, ['class' => 'text-danger']) ?>
+    </div>
+    <div class="form-group col-md-4">
+        <?= $this->formLabel($departamento) ?>
+        <?= $this->formElement($departamento) ?>
+        <?= $this->formElementErrors()->render($departamento, ['class' => 'text-danger']) ?>
+    </div>
+    <div class="form-group col-md-4">
+        <?= $this->formLabel($salario) ?>
+        <?= $this->formElement($salario) ?>
+        <?= $this->formElementErrors()->render($salario, ['class' => 'text-danger']) ?>
+    </div>
+    <div class="form-group col-md-4">
+        <?= $this->formLabel($dataAdmissao) ?>
+        <?= $this->formElement($dataAdmissao) ?>
+        <?= $this->formElementErrors()->render($dataAdmissao, ['class' => 'text-danger']) ?>
+    </div>
+    <div class="form-group col-md-4">
+        <?= $this->formLabel($dataDemissao) ?>
+        <?= $this->formElement($dataDemissao) ?>
+        <?= $this->formElementErrors()->render($dataDemissao, ['class' => 'text-danger']) ?>
+    </div>
+</div>
+<hr>
+<div class="row">
 <?php
 echo $this->formSubmit($submit);
 echo $this->formHidden($form->get('id'));
 echo $this->form()->closeTag();
 ?>
-<!--
-<h2><span class="glyphicon glyphicon-user"></span> Cadastro de Funcionário</h2>
-
-<form  method="post">
-    <hr>
-    <h3>Dados Pessoas</h3>
-    <div class="row">
-        <div class="form-group col-md-6">
-            <label for="nome">Nome:</label>
-            <input type="text" class="form-control" id="nome">
-        </div>
-
-        <div class="form-group col-md-3">
-            <label for="rg">RG:</label>
-            <input type="text" class="form-control" id="rg" placeholder="99.999.999-X">
-        </div>
-
-        <div class="form-group col-md-3">
-            <label for="cpf">CPF:</label>
-            <input type="text" class="form-control" id="cpf" placeholder="999.999.999.99">
-        </div>
-        <div class="form-group col-md-4">
-            <label for="dataNasc">Data Nasc.:</label>
-            <input type="date" class="form-control" id="dataNasc">
-        </div>
-
-        <div class="form-group col-md-4">
-            <label for="estadoCivil">Estado Civil:</label>
-            <select id="estadoCivil" class="form-control">
-                <option>Solteiro(a)</option>
-                <option>Casado(a)</option>
-                <option>Divorciado(a)</option>
-                <option>Viúvo(a)</option>
-            </select>
-        </div>
-
-        <div class="form-group col-md-4">
-            <label for="sexo">Sexo:</label>
-            <div class="radio">
-                <label class="radio-inline"><input type="radio" name="sexo" checked>Fem.</label>
-                <label class="radio-inline"><input type="radio" name="sexo">Masc.</label>
-            </div>
-
-        </div>
-        <div class="form-group col-md-4">
-            <label for="email">E-mail:</label>
-            <input type="email" class="form-control" id="email">
-        </div>
-        <div class="form-group col-md-4">
-            <label for="telefoneFixo">Telefone Fixo:</label>
-            <input type="text" class="form-control" id="telefoneFixo">
-        </div>
-        <div class="form-group col-md-4">
-            <label for="telefoneMovel">Telefone Movel:</label>
-            <input type="text" class="form-control" id="telefoneMovel">
-        </div>
-    </div>
-    <hr>
-    <h3>Endereço</h3>
-    <div class="row">
-        <div class="form-group col-md-2">
-            <label for="cep">CEP:</label>
-            <input type="text" class="form-control" id="cep" placeholder="99999-999">
-        </div>
-
-        <div class="form-group col-md-6">
-            <label for="logradouro">Logradouro:</label>
-            <input type="text" class="form-control" id="logradouro" placeholder="Rua/Av.">
-        </div>
-
-        <div class="form-group col-md-1">
-            <label for="numero">Número:</label>
-            <input type="text" class="form-control" id="numero">
-        </div>
-        <div class="form-group col-md-3">
-            <label for="bairro">Bairro:</label>
-            <input type="text" class="form-control" id="bairro">
-        </div>
-        <div class="form-group col-md-4">
-            <label for="complemento">Complemento:</label>
-            <input type="text" class="form-control" id="complemento">
-        </div>
-
-        <div class="form-group col-md-4">
-            <label for="cidade">Cidade:</label>
-            <input type="text" class="form-control" id="cidade">
-        </div>
-
-        <div class="form-group col-md-4">
-            <label for="estado">Estado:</label>
-            <input type="text" class="form-control" id="estado">
-        </div>
-    </div>
-    <hr>
-    <h3>Dados Contratuais</h3>
-    <div class="row">
-        <div class="form-group col-md-6">
-            <label for="departamento">Departamento:</label>
-            <input type="text" class="form-control" id="departamento">
-        </div>
-        <div class="form-group col-md-6">
-            <label for="funcao">Função:</label>
-            <input type="text" class="form-control" id="funcao">
-        </div>
-
-        <div class="form-group col-md-6">
-            <label for="salario">Salário:</label>
-            <input type="text" class="form-control" id="salario" placeholder="R$ 9.999,99">
-        </div>
-        <div class="form-group col-md-3">
-            <label for="admissao">Data de Admissão:</label>
-            <input type="date" class="form-control" id="admissao">
-        </div>
-        <div class="form-group col-md-3">
-            <label for="demissao">Data de Demissão:</label>
-            <input type="date" class="form-control" id="demissao">
-        </div>
-    </div>
-    <hr>
-    <div class="row">
-        <button class="btn btn-primary col-md-2">Salvar</button>
-
-    </div>
-
-</form>
+</div>
 
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+
 <script>
     $(document).ready(function () {
-        var $seuCampoCpf = $("#cpf");
-        var $seuCampoRg = $("#rg");
-        var $seuCampoCep = $("#cep");
-        $seuCampoCpf.mask('000.000.000-00', {reverse: false});
-        $seuCampoRg.mask('00.000.000-A', {reverse: false});
-        $seuCampoCep.mask('00000-000', {reverse: false});
+        $("#cpf").mask('000.000.000-00', {reverse: false});
+        $("#rg").mask('00.000.000-A', {reverse: false});
+        $("#telefoneFixo").mask('(000) 0000-0000');
+        $("#telefoneMovel").mask('(000) 00000-0000');
+        $("#cep").mask('00000-000', {reverse: false});
+        $("#salario").mask('#.##0,00', {reverse: true});
     });
+
+
 
     $(document).ready(function() {
 
@@ -231,4 +251,3 @@ echo $this->form()->closeTag();
 
 </script>
 </script>
--->

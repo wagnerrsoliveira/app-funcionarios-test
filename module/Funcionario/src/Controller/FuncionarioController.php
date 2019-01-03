@@ -7,6 +7,7 @@ namespace Funcionario\Controller;
 use Funcionario\Form\FuncionarioForm;
 use Funcionario\Model\DepartamentoRepository;
 use Funcionario\Model\FuncaoRepository;
+use Funcionario\Model\Funcionario;
 use Funcionario\Model\FuncionarioRepository;
 use Interop\Container\ContainerInterface;
 use Zend\Mvc\Controller\AbstractActionController;
@@ -47,10 +48,24 @@ class FuncionarioController extends AbstractActionController
         $form = $this->containerInterface->get(FuncionarioForm::class);
 
 
+
+
+
         if ($this->params()->fromPost()) {
-            return ['form' => $form];
+            $form->setData($this->params()->fromPost());
+            if (! $form->isValid()) {
+                return compact('form','funcoes');
+            }else{
+                $funcionario =new Funcionario();
+                $funcionario->exchangeArray($form->getData());
+
+
+                $this->containerInterface->get(FuncionarioRepository::class)->insert($funcionario);
+            }
+
+            return new ViewModel(compact('form','funcoes'));
         }
-           return new ViewModel();
+        return new ViewModel(compact('form','funcoes'));
     }
 
     public function detailAction()
