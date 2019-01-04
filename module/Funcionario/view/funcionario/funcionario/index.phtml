@@ -18,8 +18,8 @@
     <tr>
         <th>#id</th>
         <th>Nome</th>
-        <th>Função</th>
-        <th>Departamento</th>
+        <th>ID Função</th>
+        <th>ID Departamento</th>
         <th>Visualizar</th>
         <th>Editar</th>
         <th>Excluir</th>
@@ -31,22 +31,8 @@
         <tr>
             <td><?=$funcionario->getId()?></td>
             <td><?=$funcionario->getNome()?></td>
-
-            <td>
-                <?php foreach ($funcoes as $funcao){
-                    if($funcao->getId()==$funcionario->getIdFuncao()){
-                        echo $funcao->getDescricao();
-                    }
-                }  ?>
-            </td>
-
-            <td>
-                <?php foreach ($departamentos as $departamento){
-                    if($departamento->getId()==$funcionario->getIdDepartamento()){
-                        echo $departamento->getDescricao();
-                    }
-                }  ?>
-            </td>
+            <td><?=$funcionario->getIdFuncao()?></td>
+            <td><?=$funcionario->getIdDepartamento()?></td>
             <td><a class="text-warning" href="<?= $this->url('funcionario', ['action' => 'detail', 'id' => $funcionario->getId()]) ?>"><span class="glyphicon glyphicon-search"></span></a></td>
             <td><a class="text-success" href="<?= $this->url('funcionario', ['action' => 'edit', 'id' => $funcionario->getId()]) ?>"><span class="glyphicon glyphicon-pencil"></span></a></td>
             <td><a class="text-danger" href="<?= $this->url('funcionario', ['action' => 'delete', 'id' => $funcionario->getId()]) ?>"><span class="glyphicon glyphicon-trash"></span></a></td>

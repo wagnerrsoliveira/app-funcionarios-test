@@ -116,7 +116,7 @@ class FuncionarioFilter extends InputFilter
         ]);
 
         $this->add([
-            'name'=>'dataNac',
+            'name'=>'data_nascimento',
             'required' => true,
             'filters' => [
                 ['name' => StripTags::class],
@@ -142,7 +142,7 @@ class FuncionarioFilter extends InputFilter
         ]);
 
         $this->add([
-            'name'=>'estadoCivil',
+            'name'=>'estado_civil',
             'required' => true,
             'filters' => [
                 ['name' => StripTags::class],
@@ -207,7 +207,7 @@ class FuncionarioFilter extends InputFilter
         ]);
 
         $this->add([
-            'name'=>'telefoneFixo',
+            'name'=>'telefone_fixo',
             'required' => true,
             'filters' => [
                 ['name' => StripTags::class],
@@ -237,7 +237,7 @@ class FuncionarioFilter extends InputFilter
         ]);
 
         $this->add([
-            'name'=>'telefoneMovel',
+            'name'=>'telefone_movel',
             'required' => false,
             'filters' => [
                 ['name' => StripTags::class],
@@ -457,7 +457,7 @@ class FuncionarioFilter extends InputFilter
         ]);
 
         $this->add([
-            'name'=>'funcao',
+            'name'=>'id_funcao',
             'required' => true,
             'filters' => [
                 ['name' => StripTags::class],
@@ -474,7 +474,7 @@ class FuncionarioFilter extends InputFilter
 
         ]);
         $this->add([
-            'name'=>'departamento',
+            'name'=>'id_departamento',
             'required' => true,
             'filters' => [
                 ['name' => StripTags::class],
@@ -508,7 +508,7 @@ class FuncionarioFilter extends InputFilter
         ]);
 
         $this->add([
-            'name'=>'dataAdmissao',
+            'name'=>'data_admissao',
             'required' => true,
             'filters' => [
                 ['name' => StripTags::class],
@@ -533,7 +533,7 @@ class FuncionarioFilter extends InputFilter
 
         ]);
         $this->add([
-            'name'=>'dataDemissao',
+            'name'=>'data_demissao',
             'required' => false,
             'filters' => [
                 ['name' => StripTags::class],

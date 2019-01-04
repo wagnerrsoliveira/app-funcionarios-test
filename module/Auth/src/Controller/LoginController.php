@@ -51,15 +51,13 @@ class LoginController extends AbstractActionController
                 $messagesResult = new Result($result->getCode(), $result->getIdentity());
 
                 if ($result->isValid()) {
-                    //AUTHENTICADO COM SUCESSO
-                    // $request['message']=$messagesResult->getMessage();
-                    // $request['success']=$result->getCode();
-                    // $request['redirect']="/admin";
+
                     return $this->redirect()->toRoute('home');
                 }
-                return $this->redirect()->toRoute('login');
+                $errorMessage ="Email e/ou Senhas inválida";
+                return new ViewModel(compact('form',"errorMessage"));
             }
-            return $this->redirect()->toRoute('home');
+
         }
         return new ViewModel(compact('form'));
     }

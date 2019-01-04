@@ -64,7 +64,7 @@ class FuncionarioForm extends Form
         ]);
 
         $this->add([
-            'name'=>'dataNasc',
+            'name'=>'data_nascimento',
             'type'=>'date',
             'options'=>[
                 'label'=>'Data Nasc.:'
@@ -78,7 +78,7 @@ class FuncionarioForm extends Form
         ]);
 
         $this->add([
-            'name'=>'estadoCivil',
+            'name'=>'estado_civil',
             'type'=>'Select',
             'options'=>[
                 'label'=>'Estado Civil.:',
@@ -129,7 +129,7 @@ class FuncionarioForm extends Form
         ]);
 
         $this->add([
-            'name'=>'telefoneFixo',
+            'name'=>'telefone_fixo',
             'type'=>'text',
             'options'=>[
                 'label'=>'Telefone Fixo:'
@@ -143,7 +143,7 @@ class FuncionarioForm extends Form
         ]);
 
         $this->add([
-            'name'=>'telefoneMovel',
+            'name'=>'telefone_movel',
             'type'=>'text',
             'options'=>[
                 'label'=>'Telefone Movel:'
@@ -267,7 +267,7 @@ class FuncionarioForm extends Form
             $arryFuncao[$f->getId()]=$f->getDescricao();
         };
         $this->add([
-            'name'=>'funcao',
+            'name'=>'id_funcao',
             'type'=>'Select',
             'options'=>[
                 'label'=>'Função:',
@@ -287,7 +287,7 @@ class FuncionarioForm extends Form
             $arryDepartament[$d->getId()]=$d->getDescricao();
         };
         $this->add([
-            'name'=>'departamento',
+            'name'=>'id_departamento',
             'type'=>'Select',
             'options'=>[
                 'label'=>'Departamento:',
@@ -309,7 +309,7 @@ class FuncionarioForm extends Form
             ],
         ]);
         $this->add([
-            'name'=>'dataAdmissao',
+            'name'=>'data_admissao',
             'type'=>'date',
             'options'=>[
                 'label'=>'Data Admissão.:'
@@ -322,7 +322,7 @@ class FuncionarioForm extends Form
             ],
         ]);
         $this->add([
-            'name'=>'dataDemissao',
+            'name'=>'data_demissao',
             'type'=>'date',
             'options'=>[
                 'label'=>'Data Demissão.:'

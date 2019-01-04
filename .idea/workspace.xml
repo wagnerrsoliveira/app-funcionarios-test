@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df61896d-abd5-46bb-88a0-7c0e14eeb6dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/Application/src/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Application/src/Module.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Application/view/application/index/index.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/module/Application/view/application/index/index.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Auth/src/Controller/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Auth/src/Controller/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Auth/view/auth/login/login.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/module/Auth/view/auth/login/login.phtml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/Funcionario/src/Controller/FuncionarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Funcionario/src/Controller/FuncionarioController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/Funcionario/src/Form/FuncionarioFilter.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Funcionario/src/Form/FuncionarioFilter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/Funcionario/src/Form/FuncionarioForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Funcionario/src/Form/FuncionarioForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/Funcionario/src/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Funcionario/src/Module.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Funcionario/src/Model/Funcionario.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Funcionario/src/Model/Funcionario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Funcionario/src/Model/FuncionarioRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Funcionario/src/Model/FuncionarioRepository.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/add.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/add.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/detail.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/detail.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/index.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/index.phtml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,74 +28,47 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/add.phtml">
+        <entry file="file://$PROJECT_DIR$/module/Auth/view/auth/auth/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="184" column="32" selection-start-line="184" selection-start-column="32" selection-end-line="184" selection-end-column="32" />
+            <state relative-caret-position="15">
+              <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/detail.phtml">
+        <entry file="file://$PROJECT_DIR$/module/Auth/src/Controller/AuthController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="128" column="57" selection-start-line="128" selection-start-column="28" selection-end-line="128" selection-end-column="57" />
+            <state relative-caret-position="315">
+              <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="82" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Auth/view/auth/login/login.phtml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Form/FuncionarioForm.php">
+        <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-82">
-              <caret line="178" column="25" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
-              <folding>
-                <element signature="e#37#82#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Controller/FuncionarioController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="62" column="99" lean-forward="true" selection-start-line="62" selection-start-column="99" selection-end-line="62" selection-end-column="99" />
-              <folding>
-                <element signature="e#44#81#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Model/FuncionarioRepository.php">
+        <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="17" column="44" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Auth/src/Controller/LoginController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
-              <folding>
-                <element signature="e#35#59#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="196">
+              <caret line="40" column="67" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>cep</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -99,10 +76,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/module/Auth/view/auth/auth/index.phtml" />
-        <option value="$PROJECT_DIR$/module/Auth/view/login/login/login.phtml" />
-        <option value="$PROJECT_DIR$/module/Auth/view/auth/login/login.phtml" />
-        <option value="$PROJECT_DIR$/module/Auth/src/Storage/Result.php" />
         <option value="$PROJECT_DIR$/module/Auth/src/Storage/AuthStorage.php" />
         <option value="$PROJECT_DIR$/module/Auth/src/Controller/Factory/AuthControllerFactory.php" />
         <option value="$PROJECT_DIR$/module/Auth/src/Controller/Factory/LoginControllerFactory.php" />
@@ -121,10 +94,8 @@
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/module/Funcionario/src/Controller/Factory/FuncionarioControllerFactory.php" />
         <option value="$PROJECT_DIR$/module/Funcionario/src/Model/Factory/FuncionarioFactory.php" />
-        <option value="$PROJECT_DIR$/module/Funcionario/src/Model/FuncionarioRepository.php" />
         <option value="$PROJECT_DIR$/config/autoload/global.php" />
         <option value="$PROJECT_DIR$/module/Funcionario/config/module.config.php" />
-        <option value="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
         <option value="$PROJECT_DIR$/module/Funcionario/src/Model/Funcao.php" />
         <option value="$PROJECT_DIR$/module/Funcionario/src/Model/Factory/FuncaoFactory.php" />
         <option value="$PROJECT_DIR$/module/Funcionario/src/Model/FuncaoRepository.php" />
@@ -134,24 +105,33 @@
         <option value="$PROJECT_DIR$/module/Funcionario/src/Model/Factory/DepartamentoRepositoryFactory.php" />
         <option value="$PROJECT_DIR$/module/Funcionario/src/Model/Factory/FuncaoRepositoryFactory.php" />
         <option value="$PROJECT_DIR$/module/Auth/src/Model/Factory/UsersRepositoryFactory.php" />
-        <option value="$PROJECT_DIR$/module/Funcionario/src/Model/Funcionario.php" />
         <option value="$PROJECT_DIR$/module/Funcionario/src/Model/Factory/FuncionarioRepositoryFactory.php" />
-        <option value="$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/index.phtml" />
-        <option value="$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/detail.phtml" />
         <option value="$PROJECT_DIR$/module/Auth/src/Storage/Factory/AuthenticateFactory.php" />
         <option value="$PROJECT_DIR$/module/Auth/src/Form/LoginFilter.php" />
         <option value="$PROJECT_DIR$/module/Funcionario/src/Form/Factory/FuncionarioFilterFactory.php" />
         <option value="$PROJECT_DIR$/module/Funcionario/src/Form/Factory/FuncionarioFormFactory.php" />
-        <option value="$PROJECT_DIR$/config/autoload/local.php" />
         <option value="$PROJECT_DIR$/module/Funcionario/src/Module.php" />
         <option value="$PROJECT_DIR$/module/Application/src/Module.php" />
+        <option value="$PROJECT_DIR$/config/autoload/local.php" />
         <option value="$PROJECT_DIR$/module/Funcionario/src/Form/FuncionarioForm.php" />
         <option value="$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/add.phtml" />
         <option value="$PROJECT_DIR$/module/Funcionario/src/Form/FuncionarioFilter.php" />
-        <option value="$PROJECT_DIR$/module/Auth/src/Controller/LoginController.php" />
+        <option value="$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/detail.phtml" />
+        <option value="$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/index.phtml" />
+        <option value="$PROJECT_DIR$/module/Funcionario/src/Model/FuncionarioRepository.php" />
+        <option value="$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/delete.phtml" />
+        <option value="$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/edit.phtml" />
         <option value="$PROJECT_DIR$/module/Funcionario/src/Controller/FuncionarioController.php" />
+        <option value="$PROJECT_DIR$/module/Funcionario/src/Model/Funcionario.php" />
+        <option value="$PROJECT_DIR$/module/Auth/src/Controller/LoginController.php" />
+        <option value="$PROJECT_DIR$/module/Auth/view/auth/login/login.phtml" />
+        <option value="$PROJECT_DIR$/module/Application/view/application/index/index.phtml" />
+        <option value="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
       </list>
     </option>
+  </component>
+  <component name="PhpTemplates">
+    <option name="NEW_PHP_FILE_LAST_EXTENSION" value="phtml" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -217,54 +197,53 @@
             <path>
               <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Funcionario" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Funcionario" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="autoload" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Funcionario" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Funcionario" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Controller" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -272,17 +251,40 @@
               <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Funcionario" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Form" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
               <item name="app-funcionarios-test" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
               <item name="Funcionario" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="app-funcionarios-test" type="b2602c69:ProjectViewProjectNode" />
@@ -321,15 +323,16 @@
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\ZendFramework\app-funcionarios-test\module\Funcionario" />
+      <recent name="$PROJECT_DIR$/module/Auth/view/auth" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario" />
       <recent name="E:\ZendFramework\app-funcionarios-test\module\Funcionario\src" />
       <recent name="$PROJECT_DIR$/module/Auth/src/Controller" />
       <recent name="$PROJECT_DIR$/module/Auth/src/Controller/Factory" />
       <recent name="$PROJECT_DIR$/module/Application/view/layout" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\ZendFramework\app-funcionarios-test\module\Funcionario" />
-      <recent name="$PROJECT_DIR$/module/Auth/view/auth" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -365,17 +368,17 @@
       <workItem from="1546460952530" duration="22069000" />
       <workItem from="1546500463446" duration="4138000" />
       <workItem from="1546507359458" duration="27273000" />
+      <workItem from="1546549099482" duration="14369000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="103640000" />
+    <option name="totallyTimeSpent" value="118009000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-1" y="25" width="1368" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28139183" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28560606" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -395,32 +398,32 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28560606" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32843137" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module/Auth/src/Controller/Factory/AuthControllerFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="5" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="e#44#79#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Controller/Factory/FuncionarioControllerFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="5" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="19" selection-end-column="5" />
-          <folding>
-            <element signature="e#131#180#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/auth.phtml" />
     <entry file="file://$PROJECT_DIR$/module/Application/view/error/404.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1323" />
@@ -460,30 +463,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="42" column="31" selection-start-line="42" selection-start-column="31" selection-end-line="42" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Auth/src/Controller/AuthController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Funcionario/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
-          <folding>
-            <element signature="e#31#95#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Model/Departamento.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -505,13 +484,6 @@
           <folding>
             <element signature="e#46#75#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Model/FuncaoRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -562,27 +534,6 @@
           <folding>
             <element signature="e#126#160#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Model/Funcionario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="319" column="32" selection-start-line="319" selection-start-column="20" selection-end-line="319" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Auth/view/auth/auth/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/index.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="47" column="21" selection-start-line="43" selection-start-column="14" selection-end-line="47" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -682,13 +633,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/autoload/local.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Auth/src/Form/LoginForm.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -736,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/add.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="184" column="32" selection-start-line="184" selection-start-column="32" selection-end-line="184" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Auth/src/Form/LoginFilter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -753,60 +690,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/autoload/local.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Model/FuncaoRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Funcionario/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <element signature="e#31#95#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/delete.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Controller/FuncionarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="119" column="105" selection-start-line="119" selection-start-column="105" selection-end-line="119" selection-end-column="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Model/FuncionarioRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="50" column="28" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Form/FuncionarioFilter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="102" column="50" lean-forward="true" selection-start-line="102" selection-start-column="50" selection-end-line="102" selection-end-column="50" />
+        <state relative-caret-position="99">
+          <caret line="263" column="24" selection-start-line="263" selection-start-column="21" selection-end-line="263" selection-end-column="24" />
           <folding>
             <element signature="e#37#78#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Auth/view/auth/login/login.phtml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/detail.phtml">
+    <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Form/FuncionarioForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="128" column="57" selection-start-line="128" selection-start-column="28" selection-end-line="128" selection-end-column="57" />
+        <state>
+          <caret line="153" column="49" lean-forward="true" selection-start-line="153" selection-start-column="49" selection-end-line="153" selection-end-column="49" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Form/FuncionarioForm.php">
+    <entry file="file://$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/edit.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="178" column="25" selection-start-line="178" selection-start-column="25" selection-end-line="178" selection-end-column="25" />
-          <folding>
-            <element signature="e#37#82#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Model/Funcionario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="309" column="28" selection-start-line="309" selection-start-column="25" selection-end-line="309" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/detail.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="82" column="121" selection-start-line="82" selection-start-column="115" selection-end-line="82" selection-end-column="121" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Auth/view/auth/login/login.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/module/Auth/src/Controller/LoginController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        <state relative-caret-position="435">
+          <caret line="60" column="9" selection-start-line="60" selection-start-column="9" selection-end-line="60" selection-end-column="9" />
           <folding>
             <element signature="e#35#59#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Controller/FuncionarioController.php">
+    <entry file="file://$PROJECT_DIR$/module/Funcionario/view/funcionario/funcionario/add.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="62" column="99" lean-forward="true" selection-start-line="62" selection-start-column="99" selection-end-line="62" selection-end-column="99" />
-          <folding>
-            <element signature="e#44#81#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="69" column="8" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Funcionario/src/Model/FuncionarioRepository.php">
+    <entry file="file://$PROJECT_DIR$/module/Auth/view/auth/auth/index.phtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="44" />
+        <state relative-caret-position="15">
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Auth/src/Controller/AuthController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/application/index/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="40" column="67" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="67" />
         </state>
       </provider>
     </entry>

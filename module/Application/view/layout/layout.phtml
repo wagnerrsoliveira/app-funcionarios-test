@@ -40,6 +40,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="<?= $this->url('home')?>">Home</a></li>
                             <li><a href="<?= $this->url('funcionario')?>">Funcionário</a></li>
+                            <li><a href="#"><span class="glyphicon glyphicon-user"></span><?=$this->identity()->nome?></a>                     </li>
                             <li><a href="<?= $this->url('login',['action'=>'logout'])?>">Logout</a></li>
                         </ul>
                     </div>

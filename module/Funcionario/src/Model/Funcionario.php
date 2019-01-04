@@ -63,7 +63,7 @@ class Funcionario
 
     public function setRg($rg)
     {
-        $this->rg = $rg;
+        $this->rg = preg_replace("/[^0-9A-Z]/", "", $rg);
     }
 
 
@@ -75,7 +75,7 @@ class Funcionario
 
     public function setCpf($cpf)
     {
-        $this->cpf = $cpf;
+        $this->cpf = preg_replace("/[^0-9]/", "", $cpf);
     }
 
 
@@ -133,7 +133,7 @@ class Funcionario
 
     public function setTelefoneFixo($telefoneFixo)
     {
-        $this->telefoneFixo = $telefoneFixo;
+        $this->telefoneFixo = preg_replace("/[^0-9]/", "", $telefoneFixo);
     }
 
 
@@ -145,7 +145,7 @@ class Funcionario
 
     public function setTelefoneMovel($telefoneMovel)
     {
-        $this->telefoneMovel = $telefoneMovel;
+        $this->telefoneMovel = preg_replace("/[^0-9]/", "", $telefoneMovel);
     }
 
 
@@ -157,7 +157,7 @@ class Funcionario
 
     public function setCep($cep)
     {
-        $this->cep = $cep;
+        $this->cep =  preg_replace("/[^0-9]/", "", $cep);
     }
 
 
@@ -238,7 +238,10 @@ class Funcionario
 
     public function setSalario($salario)
     {
-        $this->salario = $salario;
+        $source = array('.', ',');
+        $replace = array('', '.');
+        $valor = str_replace($source, $replace, $salario);
+        $this->salario = $valor;
     }
 
     public function getDataAdmissao()
@@ -261,6 +264,9 @@ class Funcionario
 
     public function setDataDemissao($dataDemissao)
     {
+        if (empty($dataDemissao)||$dataDemissao==''){
+            $this->dataDemissao =null;
+        }
         $this->dataDemissao = $dataDemissao;
     }
 
@@ -291,58 +297,61 @@ class Funcionario
 
     public function exchangeArray($data)
     {
-        $this->id     = isset($data['id']) ? $data['id'] : null;
-        $this->nome = isset($data['nome']) ? $data['nome'] : null;
-        $this->rg  = isset($data['rg']) ? $data['rg'] : null;
-        $this->cpf     = isset($data['cpf']) ? $data['cpf'] : null;
-        $this->dataNascimento  = isset($data['data_nascimento']) ? $data['data_nascimento'] : null;
-        $this->estadoCivil  = isset($data['estado_civil']) ? $data['estado_civil'] : null;
-        $this->sexo = isset($data['sexo']) ? $data['sexo'] : null;
-        $this->email  = isset($data['email']) ? $data['email'] : null;
-        $this->telefoneFixo  = isset($data['telefone_fixo']) ? $data['telefone_fixo'] : null;
-        $this->telefoneMovel  = isset($data['telefone_movel']) ? $data['telefone_movel'] : null;
-        $this->cep  = isset($data['cep']) ? $data['cep'] : null;
-        $this->logradouro  = isset($data['logradouro']) ? $data['logradouro'] : null;
-        $this->numero  = isset($data['numero']) ? $data['numero'] : null;
-        $this->bairro  = isset($data['bairro']) ? $data['bairro'] : null;
-        $this->complemento  = isset($data['complemento']) ? $data['complemento'] : null;
-        $this->cidade  = isset($data['cidade']) ? $data['cidade'] : null;
-        $this->estado  = isset($data['estado']) ? $data['estado'] : null;
-        $this->salario  = isset($data['salario']) ? $data['salario'] : null;
-        $this->dataAdmissao  = isset($data['data_admissao']) ? $data['data_admissao'] : null;
-        $this->dataDemissao  = isset($data['data_demissao']) ? $data['data_demissao'] : null;
-        $this->idFuncao  = isset($data['id_funcao']) ? $data['id_funcao'] : null;
-        $this->idDepartamento  = isset($data['id_departamento']) ? $data['id_departamento'] : null;
+            isset($data['id']) ? $this->setId($data['id']) : $this->setId(null) ;
+            isset($data['nome']) ? $this->setNome($data['nome']) : $this->setNome(null);
+            isset($data['rg']) ? $this->setRg($data['rg']) : $this->setRg(null);
+            isset($data['cpf']) ? $this->setCpf($data['cpf']) : $this->setCpf(null) ;
+            isset($data['data_nascimento']) ? $this->setDataNascimento($data['data_nascimento']) : $this->setDataNascimento(null);
+            isset($data['estado_civil']) ? $this->setEstadoCivil($data['estado_civil']) : $this->setEstadoCivil(null) ;
+            isset($data['sexo']) ? $this->setSexo($data['sexo']): $this->setSexo(null);
+            isset($data['email']) ? $this->setEmail($data['email']) : $this->setEmail(null);
+            isset($data['telefone_fixo']) ? $this->setTelefoneFixo($data['telefone_fixo']) : $this->setTelefoneFixo(null);
+            isset($data['telefone_movel']) ? $this->setTelefoneMovel($data['telefone_movel']) : $this->setTelefoneMovel(null);
+            isset($data['cep']) ? $this->setCep($data['cep']) : $this->setCep(null);
+            isset($data['logradouro']) ? $this->setLogradouro($data['logradouro']): $this->setLogradouro(null);
+            isset($data['numero']) ? $this->setNumero($data['numero']) : $this->setNumero(null);
+            isset($data['bairro']) ? $this->setBairro($data['bairro']) : $this->setBairro(null);
+            isset($data['complemento']) ? $this->setComplemento($data['complemento']) : $this->setComplemento(null);
+            isset($data['cidade']) ? $this->setCidade($data['cidade']) : $this->setCidade(null) ;
+            isset($data['estado']) ? $this->setEstado($data['estado']) : $this->setEstado(null);
+            isset($data['salario']) ? $this->setSalario($data['salario']) : $this->setSalario(null);
+            isset($data['data_admissao']) ? $this->setDataAdmissao($data['data_admissao']) : $this->setDataAdmissao(null);
+            isset($data['data_demissao']) ? $this->setDataDemissao($data['data_demissao']) : $this->setDataDemissao(null);
+            isset($data['id_funcao']) ? $this->setIdFuncao($data['id_funcao']) : $this->setIdFuncao(null);
+            isset($data['id_departamento']) ? $this->setIdDepartamento($data['id_departamento']) : $this->setIdDepartamento(null) ;
 
 
     }
 
     public function getArrayCopy()
     {
-        return [
-            'id'     => $this->id,
-            'nome' => $this->nome,
-            'rg' => $this->rg,
-            'cpf' => $this->cpf,
-            'data_nascimento' => $this->dataNascimento,
-            'estado_civil' => $this->estadoCivil,
-            'sexo' => $this->sexo,
-            'email' => $this->email,
-            'telefone_fixo' => $this->telefoneFixo,
-            'telefone_movel' => $this->telefoneMovel,
-            'cep' => $this->cep,
-            'logradouro' => $this->logradouro,
-            'numero' => $this->numero,
-            'bairro' => $this->bairro,
-            'complemento' => $this->complemento,
-            'cidade' => $this->cidade,
-            'estado' => $this->estado,
-            'salario' => $this->salario,
-            'data_admissao' => $this->dataAdmissao,
-            'data_demissao' => $this->dataDemissao,
-            'id_funcao'  => $this->idFuncao,
-            'id_departamento'  => $this->idDepartamento,
-        ];
+
+            $arrayObjFunc = array();
+                $this->id>0 ? $arrayObjFunc['id'] = $this->id:false;
+            $arrayObjFunc['nome'] = $this->nome;
+            $arrayObjFunc['rg'] = $this->rg;
+            $arrayObjFunc['cpf'] = $this->cpf;
+            $arrayObjFunc['data_nascimento'] = $this->dataNascimento;
+            $arrayObjFunc['estado_civil'] = $this->estadoCivil;
+            $arrayObjFunc['sexo'] = $this->sexo;
+            $arrayObjFunc['email'] = $this->email;
+            $arrayObjFunc['telefone_fixo'] = $this->telefoneFixo;
+            $arrayObjFunc['telefone_movel'] = $this->telefoneMovel;
+            $arrayObjFunc['cep'] = $this->cep;
+            $arrayObjFunc['logradouro'] = $this->logradouro;
+            $arrayObjFunc['numero'] = $this->numero;
+            $arrayObjFunc['bairro'] = $this->bairro;
+            $arrayObjFunc['complemento'] = $this->complemento;
+            $arrayObjFunc['cidade'] = $this->cidade;
+            $arrayObjFunc['estado'] = $this->estado;
+            $arrayObjFunc['salario'] = $this->salario;
+            $arrayObjFunc['data_admissao'] = $this->dataAdmissao;
+            !empty($this->dataDemissao) ? $arrayObjFunc['data_demissao'] = $this->dataDemissao:false;
+            $arrayObjFunc['id_funcao'] = $this->idFuncao;
+            $arrayObjFunc['id_departamento'] = $this->idDepartamento;
+
+            return $arrayObjFunc;
+
     }
 
 

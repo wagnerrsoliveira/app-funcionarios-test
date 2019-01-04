@@ -1,5 +1,8 @@
-<div class="container">
+<div class="row">
+
+<div class="container  col-md-6 col-md-offset-3" >
     <?php
+    $form->setAttribute('action', $this->url('login', ['action' => 'login']));
         $form->prepare();
    echo $this->form()->openTag($form);
     ?>
@@ -7,14 +10,22 @@
     <h2 class="form-signin-heading">Login</h2>
     <label for="inputEmail" class="sr-only">Email:</label>
     <?php echo $this->formEmail($form->get('email')); ?>
+    <br>
     <label for="inputPassword" class="sr-only">Senha:</label>
     <?php echo $this->formPassword($form->get('password')); ?>
-    <div class="checkbox">
-        <label>
-            <input type="checkbox" value="remember-me"> Lembrar senha
-        </label>
+    <br>
+    <?php if(isset($errorMessage)){?>
+    <div class="alert alert-danger">
+        <?=$errorMessage?>
     </div>
+    <?php }?>
+    <br>
     <button class="btn btn-lg btn-primary btn-block" type="submit">Entrar</button>
 
     <?php echo $this->form()->closeTag(); ?>
 </div> <!-- /container -->
+
+</div>
+<br>
+<br>
+<br>
